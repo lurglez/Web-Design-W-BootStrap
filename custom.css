@@ -1,0 +1,138 @@
+body {
+    text-align: center;
+    margin: auto;
+}
+
+.carousel-item {
+    transition: transform 1s ease, opacity .5s ease-out;
+}
+
+.form-horizontal {
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 90%;
+}
+
+nav {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+
+.d-flex {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.primera {
+    width: 100%;
+    margin-left: 12%;
+}
+
+.segunda {
+    width: 100%;
+    margin-left: 30%;
+}
+
+.nav-link {
+    width: 200px;
+    font-size: larger;
+}
+
+.nav-link:hover {
+    background-color: lightskyblue;
+}
+
+.card-group {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.mb-4 {
+    width: 80%;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.table {
+    margin-left: 40%;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+@media (max-width: 1400px) {
+
+    /*El logo se mostrará en las pantallas más grandes y en la pantalla de móvil, en el resto lo ocultamos para favorecer la correcta visualización de la barra de navegación
+       cuando ésta se comprime*/
+    .navbar-brand {
+        display: none
+    }
+}
+
+@media (max-width : 1280px) {
+    .carrusel {
+        display: none;
+    }
+
+    /*Ajustamos tamaño letra barra de navegación*/
+    .nav-link {
+        width: 150px;
+        font-size: 1em;
+    }
+
+    /*Movemos el cuestionario, ahora aparecerá ocupando el ancho de la página y no a un lado*/
+    .form-horizontal {
+        position: absolute;
+        width: 80%;
+        margin-left: -75%;
+        margin-top: -3%;
+    }
+
+    /*Vamos a modificar también las listas centrales, bajando su posición para encajar el formulario de acceso encima*/
+    .list-unstyled {
+        width: 95%;
+        margin-top: 110%;
+        margin-left: -40%;
+    }
+
+    /*Sacamos la información innecesaria del formulario de contacto*/
+    .col-md-3 {
+        display: none;
+    }
+}
+
+@media (max-width : 890px) {
+
+    /*Eliminamos el formulario en pantallas más pequeñas*/
+    .form-horizontal {
+        display: none
+    }
+
+    /*Resituamos la información central de la página*/
+    .central {
+        margin-top: -30%;
+    }
+}
+
+@media (max-width:600px) {
+
+    /*Adaptamos lo que aparece en pantalla para los dispositivos más pequeños*/
+    .visita {
+        display: none;
+    }
+
+    .texto {
+        display: none;
+    }
+
+    /*Ajustamos la tabla al borde de la pantalla*/
+    .table {
+        margin-left: 0%;
+    }
+
+}
